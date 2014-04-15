@@ -10,32 +10,32 @@
 //-----------------
 
 //Cardinal Color Variables
-$cardinal-red: #8C1515;
-$dark-red: #820000; //Link Color
-$cardinal-light: #c83737; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
-$cardinal-bg: #e9afaf; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
+$cardinal-red: #7b7e83;
+$dark-red: #1c94c4; //Link Color
+$cardinal-light: #c5cdc2; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
+$cardinal-bg: #eee; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
 
 //Beige Color Variables
-$beige: #9d9573;
+$beige: #fff;
 $beige-60: lighten($beige, 18.5%); //Main Border/HR Color
 $beige-25: lighten($beige, 25%); 
 
 //Sandstone Color Variables
-$sandstone: #ddcf99;
+$sandstone: #a79fa5;
 $sandstone-50: lighten($sandstone, 9%);
 $sandstone-25: lighten($sandstone, 20%); //Important Heading BG Color 
 
 //Gray Color Variables
-$gray: #3f3c30; //Main Text Color
+$gray: #333; //Main Text Color
 $gray-75: lighten($gray, 18.25%); //Lighter Text Color
 
-$gray-3: #e9e6df; //Block/Course BG Color
-$gray-2: #f2f1eb;
-$gray-1: #fbfbf9; //Main BG Color
-$white: $gray-1;
+$gray-3: #eee; //Block/Course BG Color
+$gray-2: #e9e9e9;
+$gray-1: #fff; //Main BG Color
+$white: #fff;
 
-$black: #2e2d29;
-$black-80: #585754;
+$black: #000;
+$black-80: #555;
 
 
 
@@ -43,11 +43,9 @@ $black-80: #585754;
 //  Font Assignment
 //-----------------
 
-$theme-sans-font: 'Source Sans';
-$sans-serif: $theme-sans-font, $sans-serif;
-$body-font-family: $sans-serif;
+$body-font-family: 'Open Sans Light', $sans-serif;
 
-$theme-serif-font: 'Crimson Text';
+$theme-serif-font: 'Open Sans Light';
 $serif: $theme-serif-font, $serif;
 
 
@@ -57,15 +55,15 @@ $serif: $theme-serif-font, $serif;
 //  Theme Element Assignments
 //-----------------
 
-$body-bg: $gray-1;
+$body-bg: #fff;
 $container-bg: $gray-1;
-$login-register-bg: $gray-1;
-$content-wrapper-bg: $gray-1;
+$login-register-bg: #fff;
+$content-wrapper-bg: #fff;
 $header-image: none;
-$header-bg: transparentize(lighten($sandstone, 18.5%), .25);
+$header-bg: #fff;
 $courseware-header-image: none;
-$courseware-header-bg: transparentize(lighten($sandstone, 18.5%), .25);
-$footer-bg: $sandstone-25;
+$courseware-header-bg: #fff;
+$footer-bg: #fff;
 $courseware-footer-border: 1px solid $beige-60;
 $courseware-footer-shadow: box-shadow(2px 1px 0 rgba(0, 0, 0, .1));
 $courseware-footer-margin: 50px;
@@ -185,12 +183,12 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../themes/stanford/images/stanford-pano.jpg');
+$homepage-bg-image: url('../themes/stanford/images/banner-universite-talan.jpg');
 
 $login-banner-image: none;
 $register-banner-image: none;
 
-$video-thumb-url: '../themes/stanford/images/stanford-video-thumb.png';
+$video-thumb-url: '../themes/stanford/images/talan-video-thumb.png';
 
 //-----------------
 //  Mixin Styles
@@ -205,4 +203,9 @@ $video-thumb-url: '../themes/stanford/images/stanford-video-thumb.png';
 @mixin footer_references_style {
     margin: 0 !important;
     text-align: right;
+}
+
+.home > header,
+.course-info header.course-profile {
+  background-position: center;
 }
