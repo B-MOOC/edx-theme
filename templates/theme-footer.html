@@ -7,12 +7,35 @@
   <footer>
     <div class="colophon">
       <nav class="nav-colophon">
-        <ol>
-        </ol>
+       <ol>
+        <li><a href="${reverse('tos')}">Conditions d'utilisations</a></li>
+        <li><a href="${reverse('tos')}#privacy">Règles de confidentialité</a></li>
+        <li><a href="${reverse('tos')}#honor">Charte Utilisateurs</a></li>
+        <li><a href="${reverse('tos')}#copyright">Copyright</a></li>
+        <li><a href="${reverse('contact')}#contact">Contact</a></li>
+       </ol>
       </nav>
     </div>
     <div class="references">
-      <span>Built on <a href="http://code.edx.org">OpenEdX</a>.</span>
+      <span>Built on <a href="http://code.edx.org" target="_blank">OpenEdX</a>.</span>
     </div>
   </footer>
+</div>
+
+<div id="su-footer">
+   <div class="su-container">
+     <div class="su-row">
+       <div id="su-footer-logo" class="span2">
+         <a href="http://www.talan.com" target='_blank'>
+           <img src="${static.url('themes/stanford/images/logo-footer.png')}" alt="Talan" width="105" height="49"/>
+         </a>
+       </div>
+       <div id="su-footer-text" class="span10">
+
+        <div class="clear"></div>
+        <p class="copyright vcard">&copy; <span class="fn org">Talan</span></p>
+       </div>
+      <div style="clear: both;"></div>
+    </div>
+  </div>
 </div>
