@@ -3,11 +3,17 @@
   from django.core.urlresolvers import reverse 
   from edxmako.shortcuts import marketing_link
 %>
+<%namespace name='static' file='/static_content.html'/>
 <div class="wrapper-footer">
   <footer>
     <div class="colophon">
       <nav class="nav-colophon">
         <ol>
+          <li><a href="http://talan.com" class="img"><img src="${static.url('themes/stanford/images/logo-footer.png')}" height="40" alt="Home Page" /></a></li>
+          <li><a href="${reverse('tos')}">CGU</a></li> 
+           <li><a href="${reverse('tos')}#privacy">Politique de confidentialité</a></li>
+           <li><a href="${reverse('tos')}#honor">Code d’honneur</a></li>
+			<li><a href="${marketing_link('FAQ')}">FAQ</a></li>
         </ol>
       </nav>
     </div>

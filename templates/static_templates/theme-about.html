@@ -3,7 +3,7 @@
 
 <%inherit file="/main.html" />
 
-<%block name="title"><title>About Stanford Online</title></%block>
+<%block name="title"><title>À propos de l'université TALAN</title></%block>
 
 <%block name="js_extra">
   <script type="text/javascript">
@@ -12,15 +12,15 @@
       $('#about-menu a').removeClass('active');
       window.scrollTo(0,0);
       
-      if ( document.location.href.indexOf('#faq') > -1 ) {
-        $('section#faq').show();
-        $('#about-menu a.faq').addClass('active');
+      if ( document.location.href.indexOf('#group') > -1 ) {
+        $('section#group').show();
+        $('#about-menu a.group').addClass('active');
       } else if ( document.location.href.indexOf('#contact') > -1 ) {
         $('section#contact').show();
         $('#about-menu a.contact').addClass('active');
-      } else if ( document.location.href.indexOf('#careers') > -1 ) {
-        $('section#careers').show();
-        $('#about-menu a.careers').addClass('active');
+      } else if ( document.location.href.indexOf('#partenaire') > -1 ) {
+        $('section#partenaire').show();
+        $('#about-menu a.partenaire').addClass('active');
       } else {
         $('section#about').show();
         $('#about-menu a.about').addClass('active');
@@ -40,9 +40,9 @@
 
 <section class="container about" style="width: auto;">
   <nav id="about-menu">
-    <a href="#about" class="about active">About</a>
-    <a href="#faq" class="faq">Faq</a>
-    <a href="#careers" class="careers">Careers</a>
+    <a href="#about" class="about active">L'université TALAN</a>
+    <a href="#group" class="group">Le Groupe TALAN</a>
+    <a href="#partenaire" class="partenaire">Les partenaires</a>
     <a href="#contact" class="contact">Contact</a>
   </nav>
 
@@ -55,116 +55,93 @@
           <!-- Image Copyright owned by Giulio Gratta -->
       </div>
       <article>
-        <h2>About <span class="edx">Stanford Online</span></h2>
+        <h2>À propos de <span class="edx">l'université TALAN</span></h2>
         
-        <p>Stanford is developing new online course material in order to improve on-campus courses and provide broader public access to exciting learning opportunities.</p>
-        <p>The engineering team at Stanford's office of the Vice Provost for Online Learning is running and developing on an instance of the <a href="http://code.edx.org">OpenEdX platform</a>. More details are in <a href="http://news.stanford.edu/news/2013/june/open-source-platform-061113.html">this article</a>.</p>
+        <p>Les nouvelles technologies autorisent des approches pédagogiques innovantes qui permettent d’apporter une expérience de l’apprenant plus riche, plus humaine et plus efficace.</p>
+        
+        <p>L’Université TALAN, une initiative du groupe TALAN SA, <a href="http://www.talan.com" target="_blank">www.talan.com</a>, s’inscrit dans cette logique.
+        </p>
+        
+        <p>
+        Chez TALAN, nous avons à cœur de servir au plus prêt l’intérêt de nos clients. Pour le faire au mieux, il est crucial pour nous, <b>d’enrichir et faire progresser régulièrement nos méthodes de travail et nos compétences</b>. 
+        </p>
+        
+        <p>
+        Ainsi, dans un environnement hautement concurrentiel (la guerre des talents), les enjeux pour le Groupe TALAN sont d’assurer une <b>marque forte</b>, (être attirant) et une <b>optimisation du capital humain</b>(développer et fidéliser notre principal asset) par :
+        <ul>
+        	<li><b>le RECRUTEMENT</b> : en attirant les meilleurs talents dans tous les marchés où nos clients sont présents</li>
+        	<li><b>la FORMATION</b> : en développant les compétences de nos collaborateurs de <b>façon continue</b> via des <b>programmes communs</b> pour s’assurer d’avoir à la fois l’expertise technique (en partageant notamment le même langage) et les compétences managériales (avec une même identité́),afin de se démarquer dans un environnement hautement concurrentiel</li>
+		<li><b>la FIDELISATION et l’ANIMATION de la communauté TALAN</b> : 
+			<ul>
+				<li>animation et le management du capital humain (plan de carrière et de progrès, rémunérations, mobilité interne, etc.)</li>
+				<li>partage d’une culture et des valeurs communes notamment, <b>l’engagement</b>, la <b>collaboration</b> et <b>l’innovation</b></li>
+			</ul>
+		</li>
+        </ul>
+         </p>
+         <p>
+         Le groupe TALAN, en continuité avec ses investissements dans la recherche d’excellence, de qualité et de réponses appropriées aux besoins de ses clients, a demandé à sa direction de l’innovation :
+         <ul>
+           <li>
+         de mettre en place une <b>Université Digitale</b> porteuse de valeurs chères à TALAN (l’excellence de ces consultants, l’efficacité, la réactivité, le partage de connaissance entre les consultants et avec les clients, le transfert de savoir vers nos clients,  etc.). Cette université diffusera des formations produites par TALAN ou par ses partenaires sous forme de MOOCs (formation ouverte) ou sous formes de SPOCs (formation fermée à un groupe de personnes).
+         <br/><img src="${static.url('themes/stanford/images/universite-digitale.png')}" class="align-center" alt="universite digitale"/>
+           </li>
+           <li>
+           d’initier des <b>collaborations avec des universités et grandes écoles</b> françaises au travers du financement de thèses.
+           </li>
+         </ul>
+         </p>
+       
       </article>
       <hr class="fade-right-hr-divider">
     </section>
 
 
 ## FAQ Section ##
-    <section class="message left" id="faq">
+    <section class="message left" id="group">
       <div class="photo">
         <img src="${static.url('themes/stanford/images/memchu.jpg')}" alt="Stanford Memorial Church Facade" />
           <!-- Image Copyright owned by Giulio Gratta -->
       </div>
       <article>
-        <h2>FAQs</h2>
-        <p><strong>Has Stanford joined the edX consortium?</strong><br />
-        No.  We're partnering on the open source software.</p>
-        
-        <p><strong>What browsers are recommended for use with Stanford OpenEdX?</strong><br />
-        The latest versions of <a href="http://chrome.google.com/">Google Chrome</a>, <a href="http://www.mozilla.org/firefox">Mozilla Firefox</a>, and <a href="http://www.apple.com/safari/">Apple Safari</a>. (The site is currently not optimized for mobile use.)</p>
-
-        <p><strong>If I'm a Stanford faculty member, and I'd like to use the platform to host content for an on-campus or public course, who should I get in touch with?</strong><br />
-        <a href="mailto:courseops@class.stanford.edu">Click here to get in touch</a></p>
-
-        <p><strong>If I'm at another university, and I'd like to find out about using the open source platform, who should I get in touch with?</strong><br />
-        <a href="mailto:techsupport@class.stanford.edu">Click here to get in touch</a></p>
+        <h2>Le Groupe TALAN</h2>
+       
+       	<p>Fondée en 2002, Talan est une société de conseil et de services spécialisée dans la refonte des processus métiers et l'alignement du système d'information aux exigences de transformations permanentes des entreprises.
+       	</p>
+       	
+       	<p>Talan concentre son expertise sectorielle sur les Grands Opérateurs de Services et délivre ses savoir-faire métier, fonctionnel et technologique à l'échelle internationale à travers le partage de ses valeurs : transparence, respect, esprit d'équipe, esprit d'entreprendre et engagement.
+       	</p>
+       	
+       	<p>Création et partage de la valeur, coaching et développement des compétences, attractivité des prestations, pilotage et maîtrise des activités sont les piliers du business model qui fait le parcours exceptionnel de Talan : une croissance organique supérieure à 30% chaque année.
+       	</p>
+       	
+       	<p>Pour plus d’information sur le groupe TALAN, retrouvez-nous sur le site <a href="http://www.talan.com" target="_blank">www.talan.com</a>
+       	</p>
+       
       </article>
       <hr class="fade-right-hr-divider">
     </section>
 
 
 ## Careers Section ##
-    <section class="message left" id="careers">
+    <section class="message left" id="partenaire">
       <div class="photo">
         <img src="${static.url('themes/stanford/images/tree-light.jpg')}" alt="Stanford Quad with Hoover Tower" />
           <!-- Image Copyright owned by Giulio Gratta -->
       </div>
       <article>
-        <h2>Careers</h2>
+        <h2>Les partenaires</h2>
         <p>
-          Technology is disrupting higher education.  We believe universities can benefit from this if it's done right.  Supporting basic education and computer science research is core to what we do.  We also believe
-          that universities should be in control of how this space evolves, and that an open-source platform is the best way to do that.
-        </p>
-        <p>
-          Our engineering team is small and productive: five engineers, one PM, and two course ops staff.  We do our own operations and QA.  We install several times per week.  We like being close to our customers
-          (faculty, staff, students) since that motivates the right kind of innovation.  We run a lightweight, mostly-Agile development process with quick daily standups, group planning, and frequent demos.  We work on
-          the Stanford Campus.
-        </p>
-        <p>
-          What we work on is mostly driven by our customers, but we also commit to the core edX platform repo.  We collaborate with other OpenEdX adopters, including Google.
+        Pour assurer la réussite de la gestion de son université digitale, le groupe TALAN s’appuie sur la société B-MOOC Factory (<a href="http://www.b-mooc.com" target="_blank">www.b-mooc.com</a>), spécialisée dans :
+	        <ul>
+	        	<li>la conception, la fabrication et l’hébergement des MOOC</li>
+	        	<li>l’animation des MOOCs</li>
+	        	<li>l’élaboration de partenariat université – entreprise</li>
+	        	<li>la mise en place de stratégie MOOC et de définition des business model MOOCs</li>
+	        </ul>
         </p>
         
-        <p>&nbsp;</p>
-
-
-        <h3><strong>Software Engineer</strong>, Office of the Vice Provost for Online Learning<br /><br /></h3>
-        <p>
-          We are hiring an engineer to join Stanford Online's Platform team.  Stanford has the best, the biggest, and the most on-line courses on the Internet.  This team builds and operates the open-source platform
-          behind many of them.  Students on-campus and worldwide learn via our course materials and the online communities they create.
-        </p>
-        <p>
-          Our technical stack is modern and sane:<br />
-          - Python/Django, Nginx, Celery<br />
-          - CSS/SASS, JS/jQuery/CoffeeScript<br />
-          - Relational (MySQL) and nosql (MongoDB) storage<br />
-          - Cloud hosted at Amazon: EC2, RDS, S3, ElasticCache<br />
-          - Jenkins, Gerrit, and Ansible
-        </p>
-        <p>
-          As an engineer on this team you'd be expected to work across the stack as needed.  We are looking for generalists.  If you are an engineer who sees technical variety and learning as fun challenges, then join us.
-        </p>
-        <p>
-          This is a two year fixed term position (100% FTE). The job is on the Stanford Campus, ie. being remote full-time isn't an option.  You'll need to successfully pass a background check and show you are eligible to
-          work in the US before coming on board.
-        </p>
-        <p>
-          <a href="https://stanford.taleo.net/careersection/2/jobdetail.ftl?job=17947" style="font-size: 1.25em;padding: 5px;background-color: #820000;color: white;border-radius: 5px;">
-            Apply Now
-          </a>
-        </p>
-        
-        <p>&nbsp;</p>
-        
-        <h3><strong>Course Operations Specialist</strong>, Office of the Vice Provost for Online Learning<br /><br /></h3>
-        <p>
-          The Course Operations Specialist will be responsible for the bedrock of support to teaching staff (instructors and teaching assistants for all of our courses) for all courses using the OpenEdX platform at Stanford.
-          S/he will need to understand the ins and outs of the platform, and effectively communicate this knowledge, both in a one-on-one setting and by creating documentation. S/he will interact directly with faculty across
-          a range of disciplines, to understand their needs and how their material and assessments can be best presented online. This will be an opportunity to interact with world-class faculty, and work with them on
-          implementing best practices for online teaching in their courses.
-        </p>
-        <p>
-          On the student side, s/he will triage customer support email, create appropriate FAQs, and determine when a student issue really indicates a problem and needs to be escalated.  The successful candidate will reproduce
-          student and instructor-reported issues as needed, so that bugs can be crisply defined.
-        </p>
-        <p>
-          The Course Operations Specialist works as part of the OpenEdX engineering team. S/he must be comfortable acting as the "voice of the customer" in daily and weekly engineering meetings providing insight into faculty
-          and student issues with the platform.
-        </p>
-        <p>
-          This is a two year fixed term position (100% FTE). The job is on the Stanford Campus, ie. being remote full-time isn't an option.  You'll need to successfully pass a background check and show you are eligible to
-          work in the US before coming on board.
-        </p>
-        <p>
-          <a href="https://stanford.taleo.net/careersection/2/jobdetail.ftl?job=21944" style="font-size: 1.25em;padding: 5px;background-color: #820000;color: white;border-radius: 5px;">
-            Apply Now
-          </a>
-        </p>
-      </article>
+       </article>
       <hr class="fade-right-hr-divider">
     </section>
 
@@ -175,52 +152,13 @@
         <img src="${static.url('themes/stanford/images/dish.jpg')}" alt="Stanford Dish by Twilight" />
           <!-- Image Copyright owned by Stanford University -->
       </div>
-      <article id="stanford-OpenEdX-contact">
-        <h2>Contact Information</h2>
-        <p><strong>For general information email us at:</strong><br />
-        <a href="mailto:contact@class.stanford.edu">contact@class.stanford.edu</a></p>
+      <article>
+        <h2>Contact</h2>
+        <p><strong>Vous pouvez prendre contact avec l'universite talan par mail :</strong><br />
+        <a href="mailto:contact.universite@talan.com">contact.universite@talan.com</a></p>
 
-        <p><strong>For copyright concerns email us at:</strong><br />
-        <a href="mailto:copyright@class.stanford.edu">copyright@class.stanford.edu</a></p>
-
-        <p><strong>For bug reports email us at:</strong><br />
-        <a href="mailto:bugs@class.stanford.edu">bugs@class.stanford.edu</a></p>
-
-        <p><strong>For suggestions email us at:</strong><br />
-        <a href="mailto:suggestions@class.stanford.edu">suggestions@class.stanford.edu</a></p>
-
-        <p><strong>For technical support reports email us at:</strong><br />
-        <a href="mailto:techsupport@class.stanford.edu">techsupport@class.stanford.edu</a></p>
-
-        <p><strong>For disability-related questions email us at:</strong><br />
-        <a href="mailto:accessibility@class.stanford.edu">accessibility@class.stanford.edu</a></p>
-
-        <p><strong>For questions about privacy-related issues email us at:</strong><br />
-        <a href="mailto:privacy@class.stanford.edu">privacy@class.stanford.edu</a></p>
-
-        <p>&nbsp;</p>
-        <h2>Contact Coursera</h2>
-        <p><strong>Coursera Student Support Center:</strong><br />
-        <a href="http://help.coursera.org/" class="external">http://help.coursera.org/</a></p>
-        
-        <p>&nbsp;</p>
-        <h2>Contact NovoEd</h2>
-        <p><strong>NovoEd Support Center:</strong><br />
-        <a href="mailto:support@novoed.com" class="external">support@novoed.com</a></p>
       </article>
-      <script>
-        $(function() {
-          var ua = navigator.userAgent;
-          
-          $('#stanford-OpenEdX-contact a').each(function() {
-            var href = $(this).attr('href') + "?body=User Agent String: " + ua + " (Please do not delete, this text helps us help you. - Stanford OpenEdX Team)";
-            if (!$(this).hasClass('external')) {
-              $(this).attr('href', href);
-            }
-          });
-        });
-      </script>
-      <hr class="fade-right-hr-divider">
+     <hr class="fade-right-hr-divider">
     </section>
   </section>
 
