@@ -3,30 +3,73 @@
 
 <%inherit file="/main.html" />
 
-<%block name="title"><title>Stanford Online Help</title></%block>
+<%block name="title"><title>Talan Université FAQ</title></%block>
 
 <section class="container about" style="width: auto;">
   <nav id="about-menu">
-    <a href="#" class="help">Help</a>
+    <a href="#" class="help active">FAQ</a>
   </nav>
 
   <section class="vision">
-    <section class="message left" id="help">
-      <div class="photo">
-        <img src="${static.url('themes/stanford/images/circuit.jpg')}" alt="Circuit Traces" />
-          <!-- Image from Flickr: http://www.flickr.com/photos/creative_stock/5227842611/ -->
-      </div>
-      <article>
-        <h2>Trouble accessing a course</h2> 
-        <p><strong>If you are a Stanford student having trouble accessing ("Register for") a Stanford on-campus course:</strong></p>
+     <article>
+        <h2>Que veut dire MOOC ?</h2> 
+       
         <p>
-           - <a href="/logout">Log out</a> of your OpenEdx account.<br />
-           - Navigate to the "About" page of your course.<br />
-           - Click on the big "Register" button, and you should be able to register for your course.  You may be asked to authenticate with WebAuth first.
+          <ul>
+          	<li>Le <b>"M" de Massive</b> signifie que la formation a pour objectif d’atteindre un grand nombre de participants.</li>
+          	<li>Le <b>"O" de Open</b> signifie que le cours est ouvert à tous les internautes, sans distinction d’origine, de niveau d’études, ou d’un quelconque critère. Dans cet esprit, l’accès au MOOC est gratuit en général.</li>
+          	<li>Le <b>"O" de Online</b> signifie que l’ensemble du cours peut être suivi à distance, en utilisant une connexion internet : cours, activités, devoirs, examens, etc.</li>
+          	<li>Le <b>"C" de Course</b> rappelle que c’est un cours avec des objectifs pédagogiques, et donc une pédagogie active, et non simplement des ressources diffusées en ligne.</li>
+          </ul>
         </p>
-        <h2>For general technical support</h2>
-        <p><strong>Email us at:</strong><br />
-        <a href="mailto:techsupport@class.stanford.edu">techsupport@class.stanford.edu</a></p>
+        
+        <h2>Comment se déroule une formation ?</h2> 
+        
+        <p>
+        Une formation de type MOOC reprend le contenu d’une formation « classique » et la transforme de telle sorte que : 
+        <ul>
+        	<li>chacun puisse organiser son temps de participation à la formation en fonction de ses propres contraintes chacun puisse adapter la vitesse de réalisation de la formation en fonction de ses acquis</li>
+       		<li>chacun puisse choisir le type d’activité qui lui correspond le mieux.</li>
+        </ul>
+        </p>
+        
+        <p>Ainsi, une formation se décompose en modules :
+        	<ul>
+        		<li>un module par semaine</li>
+        		<li>chaque module pouvant être décomposé en thématique, si le sujet est complexe</li>
+        		<li>chaque module/thématique propose des activités qui permettent de transmettre un savoir, et aussi de valider l’acquisition de ce savoir :
+        			<ul>
+        				<li>lectures
+        					<ul>
+        						<li>vidéo</li>
+        						<li>supports textuels (pdf, ppt, etc )</li>
+        						<li>audio</li>
+        					</ul>
+        				</li>
+        				<li>QCM</li>
+        				<li>Espace de discussion</li>
+        				<li>Jeux</li>
+        				<li>Live chat</li>
+        				<li>Etc.</li>
+        			</ul>
+        		</li>
+        		<li>
+        			En général, le dernier module est dédié à une validation de l’acquisition des connaissances par :
+        			<ul>
+        			<li>Un travail individuel</li>
+        			<li>Et / ou Un travail de groupe</li>
+        			</ul>
+        		</li>
+        	</ul>
+        </p>
+        
+         <h2>Qui peut s’inscrire à une formation ?</h2> 
+         <p>Toute personne qui possède un accès à internet peut s’inscrire à une formation, si celle ci est disponible sur la plateforme, avec une mention « Ouverte au public ».         </p>
+
+
+		<h2>Quelle est la charge de travail pour avancer dans la formation ?</h2> 
+         <p>Un MOOC est conçu pour faire en sorte que le travail demandé pour chaque module ne dépasse pas le 2/3h par semaine. Il arrive parfois que dans un MOOC, on mette en place 2 ou 3 niveaux d’expertises, pour permettre à ceux qui le souhaitent d’approfondir les sujets. Dans ce cas, la charge de travail est supérieure. </p>
+
       </article>
     </section>
   </section>
