@@ -8,9 +8,12 @@
 <%block name="js_extra">
   <script type="text/javascript">
     $(function() {
+    	
+    	
       $('section.message').hide();
       $('#about-menu a').removeClass('active');
       window.scrollTo(0,0);
+      
       
       if ( document.location.href.indexOf('#group') > -1 ) {
         $('section#group').show();
@@ -33,7 +36,23 @@
         var clickId = "section" + $(this).attr('href');
         $('section.message').hide();
         $(clickId).show();
-      });
+      }); 
+      
+      $(".nav-global-01 li a").click(function(event) {
+      	
+      	event.preventDefault();
+      	var href = $(this).attr('href');
+      	var split = href.split("#"); 
+      	afterSplit = split[1];
+      	
+        $('#about-menu a').removeClass('active');
+        $("#about-menu a[href='#"+afterSplit+"']").addClass('active');
+        var clickId = "section"+"#"+afterSplit;
+        $('section.message').hide();
+        $(clickId).show();
+      }); 
+      
+           
     });
   </script>
 </%block>
@@ -41,7 +60,7 @@
 <section class="container about" style="width: auto;">
   <nav id="about-menu">
     <a href="#about" class="about active">L'université TALAN</a>
-    <a href="#group" class="group">Le Groupe TALAN</a>
+    <a href="#group" class="group">Le groupe TALAN</a>
     <a href="#partenaire" class="partenaire">Les partenaires</a>
     <a href="#contact" class="contact">Contact</a>
   </nav>
@@ -55,11 +74,11 @@
           <!-- Image Copyright owned by Giulio Gratta -->
       </div>
       <article>
-        <h2>l'université TALAN</h2>
+        <h2>l'université Talan</h2>
         
         <p>Les nouvelles technologies autorisent des approches pédagogiques innovantes qui permettent d’apporter une expérience de l’apprenant plus riche, plus humaine et plus efficace.</p>
         
-        <p>L’Université TALAN, une initiative du groupe TALAN SA, <a href="http://www.talan.com" target="_blank">www.talan.com</a>, s’inscrit dans cette logique.
+        <p>L’Université Talan, une initiative du groupe <a href="http://www.talan.com" target="_blank">TALAN SA</a>, s’inscrit dans cette logique.
         </p>
         
         <p>
@@ -106,14 +125,12 @@
       <article>
         <h2>Le Groupe TALAN</h2>
        
-       	<p>Fondée en 2002, Talan est une société de conseil et de services spécialisée dans la refonte des processus métiers et l'alignement du système d'information aux exigences de transformations permanentes des entreprises.
-       	</p>
+       	<p>Fondée en 2002, Talan est une société de conseil et de services spécialisée dans la refonte des processus métiers et l'alignement du système d'information aux exigences de transformations permanentes des entreprises.       	</p>
        	
        	<p>Talan concentre son expertise sectorielle sur les Grands Opérateurs de Services et délivre ses savoir-faire métier, fonctionnel et technologique à l'échelle internationale à travers le partage de ses valeurs : transparence, respect, esprit d'équipe, esprit d'entreprendre et engagement.
        	</p>
        	
-       	<p>Création et partage de la valeur, coaching et développement des compétences, attractivité des prestations, pilotage et maîtrise des activités sont les piliers du business model qui fait le parcours exceptionnel de Talan : une croissance organique supérieure à 30% chaque année.
-       	</p>
+       	<p>Création et partage de la valeur, coaching et développement des compétences, attractivité des prestations, pilotage et maîtrise des activités sont les piliers du business model qui fait le parcours exceptionnel de Talan : une croissance organique supérieure à 30% chaque année.</p>
        	
        	<p>Pour plus d’information sur le groupe TALAN, retrouvez-nous sur le site <a href="http://www.talan.com" target="_blank">www.talan.com</a>
        	</p>
@@ -131,32 +148,86 @@
       </div>
       <article>
         <h2>Les partenaires</h2>
-        <p>
-        Pour assurer la réussite de la gestion de son université digitale, le groupe TALAN s’appuie sur la société B-MOOC Factory (<a href="http://www.b-mooc.com" target="_blank">www.b-mooc.com</a>), spécialisée dans :
-	        <ul>
-	        	<li>la conception, la fabrication et l’hébergement des MOOC</li>
-	        	<li>l’animation des MOOCs</li>
-	        	<li>l’élaboration de partenariat université – entreprise</li>
-	        	<li>la mise en place de stratégie MOOC et de définition des business model MOOCs</li>
-	        </ul>
-        </p>
-        
+        <div class="partner">
+       		<img src="${static.url('themes/stanford/images/bmooc.jpg')}" alt="B-mooc" />
+	        <h3>Partenaire MOOC & Pédagogie</h3>
+	        <p>
+	        Pour assurer la réussite de la gestion de son université digitale, le groupe TALAN s’appuie sur la société B-MOOC Factory (<a href="http://www.b-mooc.com" target="_blank">www.b-mooc.com</a>), une branche de la société Homeb SARL, spécialisée dans :
+	         </p>
+		        <ul>
+		        	<li>la conception, la fabrication et l’hébergement des MOOC</li>
+		        	<li>l’animation des MOOCs</li>
+		        	<li>l’élaboration de partenariat université – entreprise</li>
+		        	<li>la mise en place de stratégie MOOC et de définition des business model MOOCs</li>
+		        </ul>
+	       
+        <div>
+        <hr/>
+        <div class="partner">
+        	<img src="${static.url('themes/stanford/images/edx.jpg')}" alt="EDX"/>
+	        <h3>Partenaire LMS</h3>
+	        <p>
+	        Pour les formations en ligne, la plateforme utilisé par l’Université TALAN, se base sur le code open source fourni par la communauté EDX.
+	        </p>
+        <div>
+        <hr/>
+        <div class="partner">
+        	<img src="${static.url('themes/stanford/images/amazonwebservices.jpg')}" alt="Amazon Web Services" />
+	        <h3>Partenaire Hébergement</h3>
+	        <p>
+	        La société Amazon Web Services héberge la plateforme et les MOOC de l’Université TALAN.
+	        </p>
+        <div>
        </article>
       <hr class="fade-right-hr-divider">
     </section>
 
 
 ## Contact Section ##
-    <section class="message left" id="contact">
+    <section class="message left register" id="contact">
       <div class="photo">
         <img src="${static.url('themes/stanford/images/dish.jpg')}" alt="Stanford Dish by Twilight" />
           <!-- Image Copyright owned by Stanford University -->
       </div>
       <article>
         <h2>Contact</h2>
-        <p><strong>Vous pouvez prendre contact avec l'universite talan par mail :</strong><br />
-        <a href="mailto:contact.universite@talan.com">contact.universite@talan.com</a></p>
+        <p><strong>Vous pouvez prendre contact avec l'université Talan via le formulaire suivant :</strong><br /></p>
+        <br/>
+		
+		 <form name="theform" action="/contactform" method="post" id="theform" class="group group-form group-form-requiredinformation">
+		 <input type="hidden" name="csrfmiddlewaretoken" value="${ csrf_token }">
 
+                    
+                    
+                    <ol class="list-input">   
+        
+					 <li class="field-group" id="field-city">
+			           <div class="field field-city text" id="field-city">
+			            <label for="city">Nom *</label>
+			            <input id="city" type="text" name="name" value="" required>
+			           </div>
+			          </li>
+			           <li class="field-group" id="field-city">
+			           <div class="field field-city text" id="field-city">
+			            <label for="city">Email *</label>
+			            <input id="city" type="email" name="email" value="" required>
+			           </div>
+			          </li>
+			           <li class="field-group" id="field-city">
+			           <div class="field field-city text" id="field-city">
+			            <label for="city">Message *</label>
+			           <textarea name="message" rows="7" cols="60" required></textarea>
+						</div>
+			          </li>
+			          <li>
+			          <div class="form-actions" style=" width: 130px; float: right; margin-right: 250px; ">
+        <button name="submit" type="submit" id="submit" class="action action-primary action-update">Envoyer</button>
+      </div>
+			          </li>
+			          </ol>
+                   
+                                </form>
+		
       </article>
      <hr class="fade-right-hr-divider">
     </section>
