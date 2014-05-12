@@ -211,6 +211,67 @@ border: 1px solid rgba(123, 126, 131, 0.28);
 
 .heroblock {padding:20px;}
 
+
+/*
+========================================================
+Course
+*/
+.courses .desc p {
+	font: normal 0.83em/1.6em "Open Sans Light",Georgia,Cambria,"Times New Roman",Times,serif;
+	}
+.course-info .details .inner-wrapper>section {border-bottom: 2px solid rgba(142, 169, 148, 0.23);
+padding-bottom: 20px;
+margin-bottom: 20px;}
+
+.course-info .details .inner-wrapper>section:last-child {border-bottom:none;}
+.course-info .details .inner-wrapper>section p{font-family:"Open Sans";font-size: 0.9em;}
+.course-info .details .inner-wrapper>section li {margin:10px 0;font-size: 0.9em;}
+.course-info .details .inner-wrapper .course-staff .teacher:last-child{margin-bottom:0;}
+
+.course-info .details .inner-wrapper>section h2{font-family:"Open Sans";color:#647769;font-weight: 600;}
+.course-info header.course-profile {
+height: 250px;
+margin-top: 0px;
+padding-top: 20px;
+}
+
+.course-info header.course-profile .intro-inner-wrapper {
+	background: #7a7d82;
+	border: none;
+	border-left: 12px solid #000;
+	box-shadow:none;
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta>a.find-courses, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart,.course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong{
+	box-shadow: none;
+color: #fff;
+font-size: 14px;
+font-weight: bold;
+background: #819279;
+border: 3px solid #000;
+text-shadow: none;
+border-radius: 0;
+
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta>a.find-courses:hover:not(:disabled), .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:hover:not(:disabled), .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart:hover:not(:disabled),
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:hover:not(:disabled) {
+	background: #6e6f71;background-image: none;
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro>hgroup h1 {
+	text-shadow:none;color:#ffffff;border:none;font-size: 1.7em;}
+.course-info header.course-profile .intro-inner-wrapper .intro>hgroup {
+	border-bottom:none;box-shadow:none;}
+	
+.course-info header.course-profile .intro-inner-wrapper .media .hero {
+	box-shadow:none;
+	border:3px solid #000;
+}
+
+.course-info .details {
+	margin-top: 20px;
+}
 /*
 ========================================================
 About page
