@@ -226,6 +226,7 @@ margin-bottom: 20px;}
 .course-info .details .inner-wrapper>section:last-child {border-bottom:none;}
 .course-info .details .inner-wrapper>section p{font-family:"Open Sans";font-size: 0.9em;}
 .course-info .details .inner-wrapper>section li {margin:10px 0;font-size: 0.9em;}
+.course-info .details .inner-wrapper>section img {max-width:100%;}
 .course-info .details .inner-wrapper .course-staff .teacher:last-child{margin-bottom:0;}
 
 .course-info .details .inner-wrapper>section h2{font-family:"Open Sans";color:#647769;font-weight: 600;}
