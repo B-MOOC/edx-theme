@@ -273,6 +273,268 @@ border-radius: 0;
 .course-info .details {
 	margin-top: 20px;
 }
+
+
+
+/*
+========================================================
+Course page
+*/
+
+.xmodule_display.xmodule_SequenceModule nav.sequence-nav ul li.prev {
+left: -10px;
+border-radius: 5px 0 0 5px;
+background:#957c7c;
+}
+
+.xmodule_display.xmodule_SequenceModule nav.sequence-nav ul li.next {
+right: -10px;
+border-radius: 0 5px 5px 0;
+background:#957c7c;
+}
+
+.xmodule_display.xmodule_SequenceModule nav.sequence-nav ul li {
+position: absolute;
+margin-bottom: 0;
+height: 48px;
+width: 73px;
+border: 2px solid #000;
+z-index: 1;
+background:none;
+box-shadow:none;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+
+.xmodule_display.xmodule_SequenceModule nav.sequence-nav .sequence-list-wrapper {
+position: relative;
+z-index: 99;
+border: 2px solid #000;
+box-sizing: border-box;
+height: 48px;
+margin: 0 30px;
+background: #DBDBDB;
+box-shadow: none;
+}
+
+.course-wrapper,#wiki-content,
+.info-wrapper {border:1px solid rgba(0,0,0,0.5) !important;border-radius:0px !important;}
+.static_tab_wrapper {border:1px solid rgba(0,0,0,0.5) !important;border-radius:0px !important;}
+.course-index div#accordion h3.ui-accordion-header a {
+	color:#000;
+}
+.course-index {background:url("../../images/bg.jpg")  no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;border-right:1px solid rgba(0, 0, 0, 0.5);}
+
+div.info-wrapper section.handouts {
+background:url("../../images/bg-opacity.jpg")  no-repeat center center; 
+  -webkit-background-size: cover;padding: 1em;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;border-left:1px solid rgba(0, 0, 0, 0.5);}
+border-radius:0px;
+}
+
+.course-index div#accordion h3.ui-accordion-header a {
+border-radius: 0;
+box-shadow: none;
+padding-left: 19px;
+color: #000;
+}
+
+.course-index div#accordion .chapter {
+width: 100% !important;
+border-bottom: 2px solid #000000;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 11px 14px;
+background: rgba(203, 182, 162, 0.65);
+box-shadow: none;
+-webkit-transition: background-color 0.1s linear 0s;
+-moz-transition: background-color 0.1s linear 0s;
+transition: background-color 0.1s linear 0s;
+}
+
+.course-index div#accordion .chapter:first-child {border-radius:0px;}
+.course-index div#accordion .chapter.is-open {
+background: #e2e2e2;
+}
+
+.course-content #seq_content h2 {color:#000;}
+ 
+ 
+.course-index div#accordion ul.ui-accordion-content li.active>a,
+nav.course-material ol.course-tabs li a.active, nav.course-material .xmodule_display.xmodule_SequenceModule nav.sequence-nav ol.course-tabs li a.seq_video.active, .xmodule_display.xmodule_SequenceModule nav.sequence-nav nav.course-material ol.course-tabs li a.seq_video.active {
+	border: 2px solid #000;
+	box-shadow: none;
+	color: #fff;
+	background: #957c7c;
+	border-radius: 0;	
+}
+
+.course-index div#accordion ul.ui-accordion-content li a p {font-weight:normal;}
+
+.course-index div#accordion ul.ui-accordion-content li.active>a p {
+	color:#fff;
+}
+
+.course-index div#accordion ul.ui-accordion-content li a:hover, .course-index div#accordion ul.ui-accordion-content div.info-wrapper section.handouts ol li div.hitarea:hover+h4, div.info-wrapper section.handouts ol .course-index div#accordion ul.ui-accordion-content li div.hitarea:hover+h4, .course-index div#accordion ul.ui-accordion-content div.info-wrapper section.handouts ol li div.hitarea:focus+h4, div.info-wrapper section.handouts ol .course-index div#accordion ul.ui-accordion-content li div.hitarea:focus+h4, .course-index div#accordion ul.ui-accordion-content li a:focus {
+	background-color:#a7a0a5;
+	border-radius:0px;
+}
+ 
+.course-index div#accordion ul.ui-accordion-content li.graded>a,
+.course-index div#accordion ul.ui-accordion-content li.graded.active>a {
+	background-image: url("../../images/graded.png");
+	background-repeat: no-repeat;
+	background-position: 97% center;	
+}
+
+.course-index div#accordion h3.ui-accordion-header span.ui-icon {
+opacity: 1;
+}
+
+.course-index div#accordion .chapter:last-child {
+border-radius: 0px;
+box-shadow: none;
+}
+
+.xmodule_display.xmodule_SequenceModule nav.sequence-nav ul li.prev a {
+	background-image: url("../../images/prev.png");	
+}
+
+.xmodule_display.xmodule_SequenceModule nav.sequence-nav ul li.next a {
+margin-left: 30px;
+background-image:  url("../../images/next.png");	
+background-position: center 15px;
+}
+
+.xmodule_display.xmodule_SequenceModule nav.sequence-bottom ul li.prev a {
+background-image: url("../../images/prev.png");	
+}
+
+.xmodule_display.xmodule_SequenceModule nav.sequence-bottom ul li.next a {
+background-image:  url("../../images/next.png");	
+}
+
+.xmodule_display.xmodule_SequenceModule nav.sequence-bottom ul li.prev {
+border-radius: 5px 0 0 5px;
+background: #957c7c;
+}
+.xmodule_display.xmodule_SequenceModule nav.sequence-bottom ul li.next {
+border-radius: 0 5px 5px 0;
+border-left: none;
+background: #957c7c;
+} 
+
+.xmodule_display.xmodule_SequenceModule nav.sequence-bottom ul li {
+float: left;
+border: 2px solid #000;
+box-shadow: none;
+}
+
+
+div.info-wrapper section.updates>h1 {
+border-bottom: 3px solid #7b7f83;
+text-align: left;
+font-size: 1.5em;
+font-weight: 100;
+padding-bottom: 0.5em;
+text-transform: uppercase;
+color: #5A5E61;
+font-weight: 900;}
+
+.course-content em,.course-content i {
+	color:#819079;}
+	
+div.course-wrapper section.course-content .vert-mod>div {
+	border-bottom: 2px solid #000;
+}
+
+.blue-button, .xmodule_display.xmodule_CapaModule div.problem div.action .save, .xmodule_display.xmodule_PeerGradingModule section.open-ended-child div.action input.save, .xmodule_display.xmodule_ConditionalModule div.problem div.action .save, .xmodule_display.xmodule_CombinedOpenEndedModule section.open-ended-child div.action input.save {
+	box-shadow: none;
+cursor: pointer;
+background: #787d83;
+transition: all 0.3s linear;
+border: 2px solid #000;
+border-radius: 0px;
+color: #fff;
+text-shadow: none;
+text-transform: uppercase;font-weight: 900;
+}
+
+
+.blue-button:hover:not(:disabled), .xmodule_display.xmodule_CapaModule div.problem div.action .save:hover:not(:disabled), .xmodule_display.xmodule_PeerGradingModule section.open-ended-child div.action input.save:hover:not(:disabled), .xmodule_display.xmodule_ConditionalModule div.problem div.action .save:hover:not(:disabled), .xmodule_display.xmodule_CombinedOpenEndedModule section.open-ended-child div.action input.save:hover:not(:disabled), .blue-button:focus:not(:disabled), .xmodule_display.xmodule_CapaModule div.problem div.action .save:focus:not(:disabled), .xmodule_display.xmodule_PeerGradingModule section.open-ended-child div.action input.save:focus:not(:disabled), .xmodule_display.xmodule_ConditionalModule div.problem div.action .save:focus:not(:disabled), .xmodule_display.xmodule_CombinedOpenEndedModule section.open-ended-child div.action input.save:focus:not(:disabled) {
+box-shadow: none;
+cursor: pointer;font-weight: 900;
+background: #aec7c9;
+transition: all 0.3s linear;
+border: 2px solid #000;
+border-radius: 0px;
+color: #000;
+text-shadow: none;
+text-transform: uppercase;
+}
+
+
+.light-button, div.history-controls input[type="submit"], a.light-button, .gray-button, input[type="reset"], input[type="submit"], input[type="button"], button, .button, form input[type="reset"], form input[type="submit"], form input[type="button"], form button, form .button, .xmodule_display.xmodule_LTIModule div.lti .wrapper-lti-link .lti-link .link_lti_new_window {
+box-shadow: none;
+cursor: pointer;
+background: #eeeeee;
+transition: all 0.3s linear;
+border: 2px solid #000;
+border-radius: 0px;
+color: #000;
+text-shadow: none;
+text-transform: uppercase;font-weight: 900;
+}
+
+.light-button:hover:not(:disabled), div.history-controls input[type="submit"]:hover:not(:disabled), .light-button:focus:not(:disabled), div.history-controls input[type="submit"]:focus:not(:disabled), a.light-button:hover:not(:disabled), div.info-wrapper section.handouts ol li div.hitarea:hover+h4.light-button:not(:disabled), div.info-wrapper section.handouts ol li div.hitarea:focus+h4.light-button:not(:disabled), a.light-button:focus:not(:disabled), .gray-button:hover:not(:disabled), input[type="reset"]:hover:not(:disabled), input[type="submit"]:hover:not(:disabled), input[type="button"]:hover:not(:disabled), button:hover:not(:disabled), .button:hover:not(:disabled), .xmodule_display.xmodule_LTIModule div.lti .wrapper-lti-link .lti-link .link_lti_new_window:hover:not(:disabled), .gray-button:focus:not(:disabled), input[type="reset"]:focus:not(:disabled), input[type="submit"]:focus:not(:disabled), input[type="button"]:focus:not(:disabled), button:focus:not(:disabled), .button:focus:not(:disabled), .xmodule_display.xmodule_LTIModule div.lti .wrapper-lti-link .lti-link .link_lti_new_window:focus:not(:disabled){
+box-shadow: none;
+cursor: pointer;font-weight: 900;
+background: #888888;
+transition: all 0.3s linear;
+border: 2px solid #000;
+border-radius: 0px;
+color: #fff;
+text-shadow: none;
+text-transform: uppercase;
+}
+
+button.show {background:#c6cdc2 !important;}
+button.show:hover {background:#819079 !important;color:#fff !important;}
+
+.solution-span > span {
+	background: #c6cdc2 !important;
+border: 3px solid #819079 !important;
+box-shadow: none !important;
+border-radius: 0px !important;	
+}
+
+.xmodule_display.xmodule_CapaModule div.problem .detailed-solution>p:first-child {
+	color:#000;}
+
+.problem {position:relative;margin-right:50px;}	
+.problem:hover:before {opacity:1;}
+.problem:before {
+	content: " ? ";transition:all 0.3s linear;
+position: absolute;
+right: -50px;
+font-size: 26px;
+top: -20px;
+width: 50px;
+height: 50px;
+line-height: 50px;
+opacity: 0.5;
+text-align: center;
+background: #c6cdc2;
+border-radius: 50%;
+border: 2px solid #819079;}
+
 /*
 ========================================================
 About page
