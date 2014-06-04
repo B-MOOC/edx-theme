@@ -304,7 +304,7 @@ right: 10px;
 }
 
 .dashboard .profile-sidebar .user-info>ul {
-background: #D4E3E4;
+background: #ffffff;
 border: 3px solid #787d83;
 border-top: none;
 -webkit-box-sizing: border-box;
@@ -394,11 +394,12 @@ color: #000;
 text-shadow: none  !important;
 text-transform: uppercase;
 }
-	}
+
 /*
 ========================================================
 Course page
 */
+
 
 .xmodule_display.xmodule_SequenceModule nav.sequence-nav ul li.prev {
 left: -10px;
@@ -412,6 +413,9 @@ border-radius: 0 5px 5px 0;
 background:#957c7c;
 }
 
+.xmodule_display.xmodule_VideoModule div.video:focus, .xmodule_display.xmodule_VideoModule div.video:active, .xmodule_display.xmodule_VideoModule div.video:hover {
+outline: none;
+}
 
 
 .xmodule_display.xmodule_SequenceModule nav.sequence-nav ul li {
@@ -689,8 +693,74 @@ Home Page
 
 .highlighted-courses .courses .course header.course-preview hgroup h2 .course-number, .find-courses .courses .course header.course-preview hgroup h2 .course-number {
 	display:none;}
-	
-	
+
+
+/*
+========================================================
+Lecture Page
+*/
+
+#lecture {width:70%;margin:0 auto;}
+
+#lecture ol > li {
+width: 70%;
+margin: 20px auto 45px;
+padding-left:200px;
+list-style-type: none;
+position:relative;
+border-bottom:2px solid #000;
+padding-bottom:45px;
+}
+
+#lecture ol > li li {margin-left:30px;font-size:12px;}
+
+#lecture ol > li:last-child{border:none;}
+
+#lecture ol > li {
+min-height:200px;
+}
+
+#lecture ol > li img {
+position: absolute;
+left:0px;
+}
+
+
+#lecture .intro {
+background: #957c7c;
+border: 2px solid #000;
+padding: 10px;
+margin-bottom: 40px;
+}
+#lecture .intro a {
+color:#cbb6a2;
+}
+#lecture .intro h1 {
+font-size: 26px;
+margin: 10px;
+color: #fff;
+text-transform: uppercase;
+font-weight: 900;
+padding: 0;
+border: none;
+}
+#lecture .intro img {
+	float: right;
+margin: 10px;}
+#lecture .intro p {
+	color: #fff;
+font-size: 14px;
+margin: 10px;}
+
+#lecture .MsoNormal {
+border: 2px solid rgba(198, 205, 194, 0.65);
+padding: 6px 10px;
+font-size: 14px;
+}
+#lecture .MsoNormal b {
+color: #738868;
+font-size: 16px !important;
+}
 /*
 ========================================================
 Media queries
