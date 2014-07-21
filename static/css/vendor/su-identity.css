@@ -71,6 +71,10 @@ display: block;
   text-decoration: underline;
 }
 
+.dashboard .my-courses .course .cover img {
+min-height: 0;
+}
+
 /* Prevent horizontal scroll bar */
 #su-footer .su-container {
   padding: 3px 7px 20px;
