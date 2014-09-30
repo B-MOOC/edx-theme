@@ -889,6 +889,14 @@ Media queries
 }
 
 /*
+* Color ribbon individuelle
+*/
+.highlighted-courses .courses .course .status.individuelle, .find-courses .courses .course .status.individuelle {
+background: #1CC45F;
+}
+
+
+/*
 Sticky Footer Solution
 by Steve Hatcher 
 http://stever.ca
