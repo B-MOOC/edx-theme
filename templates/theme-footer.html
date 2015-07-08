@@ -1,9 +1,9 @@
 ## mako
-<%! 
-  from django.core.urlresolvers import reverse 
-  from edxmako.shortcuts import marketing_link
-%>
+<%! from django.core.urlresolvers import reverse %>
 <%namespace name='static' file='/static_content.html'/>
+<%! from datetime import datetime %>
+<%! from pytz import UTC %>
+
 <div class="wrapper-footer">
   <footer>
     <div class="colophon">
